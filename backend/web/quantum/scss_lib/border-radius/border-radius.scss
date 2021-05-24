@@ -1,0 +1,40 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-top-left-radius: $radius;
+  -ms-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-top-right-radius: $radius;
+  -ms-border-top-right-radius: $radius;
+  border-border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-bottom-right-radius: $radius;
+  -ms-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+// TODO: ADD others border radius
+
+//@mixin border-bottom-radius($radii) {
+//  @include prefixer(border-bottom-left-radius, $radii, spec);
+//  @include prefixer(border-bottom-right-radius, $radii, spec);
+//}
+//@mixin border-left-radius($radii) {
+//  @include prefixer(border-top-left-radius, $radii, spec);
+//  @include prefixer(border-bottom-left-radius, $radii, spec);
+//}
+//@mixin border-right-radius($radii) {
+//  @include prefixer(border-top-right-radius, $radii, spec);
+//  @include prefixer(border-bottom-right-radius, $radii, spec);
+//}

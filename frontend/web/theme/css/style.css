@@ -1,0 +1,1039 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../fonts/SofiaProRegular.woff2") format("woff2"), url("../fonts/SofiaProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Light.eot");
+  src: url("../fonts/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light.ttf") format("truetype"), url("../fonts/SFProDisplay-Light.svg#SFProDisplay-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Display_reg';
+  src: url("../fonts/SFProDisplay-Regular.eot");
+  src: url("../fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay-Regular.svg#SFProDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Display_medium';
+  src: url("../fonts/SFProDisplay-Medium.eot");
+  src: url("../fonts/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.ttf") format("truetype"), url("../fonts/SFProDisplay-Medium.svg#SFProDisplay-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Bold.eot");
+  src: url("../fonts/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype"), url("../fonts/SFProDisplay-Bold.svg#SFProDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Conthrax Sb';
+  src: url("../fonts/ConthraxSb-Regular.eot");
+  src: url("../fonts/ConthraxSb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ConthraxSb-Regular.woff2") format("woff2"), url("../fonts/ConthraxSb-Regular.woff") format("woff"), url("../fonts/ConthraxSb-Regular.ttf") format("truetype"), url("../fonts/ConthraxSb-Regular.svg#ConthraxSb-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+body {
+  height: 100%;
+  position: relative;
+  padding-bottom: 92px;
+  min-height: 1000px;
+  background-color: #f3f3f3; }
+  @media screen and (max-width: 767px) {
+    body {
+      padding-bottom: 140px;
+      min-height: 500px; } }
+
+.login_screen {
+  background: url("../images/screen_login.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  height: 100vh;
+  padding-top: 50px; }
+  .login_screen .login_block {
+    width: 100%;
+    max-width: 470px;
+    text-align: center; }
+  @media screen and (max-width: 767px) {
+    .login_screen .login_block {
+      max-width: 100%; } }
+    .login_screen .login_block p {
+      font-size: 10px;
+      color: #060606;
+      opacity: 0.4;
+      text-align: center;
+      padding-top: 40px; }
+    .login_screen .login_block .block_white {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px 30px;
+      width: 100%;
+      max-width: 420px;
+      margin-top: 20px;
+      position: relative;
+      border-bottom: solid 49px #f0f0f0; }
+  @media screen and (max-width: 767px) {
+    .login_screen .login_block .block_white {
+      max-width: 100%; } }
+      .login_screen .login_block .block_white h2 {
+        font-family: 'SF Pro Display';
+        font-weight: bold;
+        font-size: 20px;
+        color: #372b19;
+        line-height: 20px;
+        margin-bottom: 54px; }
+      .login_screen .login_block .block_white .form-group {
+        text-align: left; }
+        .login_screen .login_block .block_white .form-group .form-control {
+          height: 55px;
+          line-height: 55px;
+          padding-top: 0;
+          padding-bottom: 0px;
+          border: none;
+          border-radius: 7px;
+          background-color: #ecf0f1;
+          color: #989898;
+          font-family: 'SF Pro Display_medium';
+          font-weight: 500;
+          font-size: 13px; }
+          .login_screen .login_block .block_white .form-group .form-control:focus {
+            background-color: #ffd200;
+            color: #000;
+            transition: 0.3s; }
+      .login_screen .login_block .block_white .forgot {
+        line-height: 49px;
+        position: absolute;
+        bottom: -49px;
+        width: 100%;
+        left: 0; }
+        .login_screen .login_block .block_white .forgot a {
+          color: #000000;
+          font-family: 'SF Pro Display_medium';
+          font-weight: 500;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 13px;
+          line-height: 49px; }
+      .login_screen .login_block .block_white .or {
+        font-family: 'SF Pro Display_medium';
+        font-weight: 500;
+        font-size: 13px;
+        color: #989898;
+        line-height: 70px;
+        text-align: center; }
+      .login_screen .login_block .block_white .btn-primary {
+        height: 55px;
+        line-height: 55px;
+        padding-top: 0;
+        padding-bottom: 0px;
+        border: none;
+        border-radius: 7px;
+        background: #ffd200;
+        color: #000000;
+        font-family: 'SF Pro Display_medium';
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 29px; }
+      .login_screen .login_block .block_white .log_face {
+        display: block;
+        width: 100%;
+        margin-right: 4px;
+        border-radius: 7px;
+        background-color: #35599d;
+        line-height: 45px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'SF Pro Display_medium';
+        font-weight: 500; }
+        .login_screen .login_block .block_white .log_face i {
+          margin-right: 33px; }
+        .login_screen .login_block .block_white .log_face:hover {
+          text-decoration: none; }
+      .login_screen .login_block .block_white .log_googl {
+        display: block;
+        width: 100%;
+        border-radius: 7px;
+        background-color: #3889fa;
+        line-height: 45px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'SF Pro Display_medium';
+        font-weight: 500; }
+        .login_screen .login_block .block_white .log_googl i {
+          margin-right: 33px; }
+        .login_screen .login_block .block_white .log_googl:hover {
+          text-decoration: none; }
+
+@media only screen and (max-width: 767px) {
+  .login_screen {
+    padding-top: 40px;
+    background-size: cover;
+    height: auto;
+    background-color: black; } }
+footer {
+  min-height: 92px;
+  max-height: 160px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  font-family: 'SF Pro Display';
+  font-weight: lighter; }
+  footer .row {
+    padding-top: 33px;
+    padding-bottom: 10px; }
+  footer .text_fot_1 {
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 1.3125rem; }
+  @media screen and (max-width: 767px) {
+    footer .text_fot_1 {
+      font-size: 0.85rem; } }
+  @media screen and (max-width: 575px) {
+    footer .text_fot_1 {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 346px) {
+    footer .text_fot_1 {
+      font-size: 0.7rem; } }
+    footer .text_fot_1 a {
+      display: inline-block;
+      border-radius: 50%;
+      border: solid 1px #4c4c4c;
+      margin-left: 8px;
+      width: 33px;
+      line-height: 30px;
+      text-align: center;
+      transition: 0.3s; }
+      footer .text_fot_1 a i {
+        color: #4c4c4c;
+        font-size: 1rem;
+        line-height: 30px; }
+      footer .text_fot_1 a.facebook:hover {
+        background-color: #35599d;
+        border: solid 1px white; }
+        footer .text_fot_1 a.facebook:hover i {
+          color: white; }
+      footer .text_fot_1 a.twitter:hover {
+        background-color: #5fa9dd;
+        border: solid 1px white; }
+        footer .text_fot_1 a.twitter:hover i {
+          color: white; }
+      footer .text_fot_1 a.instagram:hover {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        border: solid 1px white; }
+        footer .text_fot_1 a.instagram:hover i {
+          color: white; }
+  footer .copy {
+    font-family: 'SF Pro Display_reg';
+    font-weight: 400;
+    opacity: 0.4;
+    font-size: 7px;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 10px; }
+  footer .link_terms a {
+    font-family: 'SF Pro Display_medium';
+    font-weight: 500;
+    font-size: 0.8125rem;
+    opacity: 0.6;
+    color: #000;
+    margin-left: 30px;
+    display: inline-block; }
+  @media screen and (max-width: 767px) {
+    footer .link_terms {
+      text-align: center !important; }
+      footer .link_terms a {
+        margin-left: 10px;
+        margin-right: 10px; } }
+
+header {
+  background-color: #000000;
+  margin-bottom: 26px; }
+  @media screen and (max-width: 767px) {
+    header {
+      margin-bottom: 0; } }
+  header .h-72 {
+    height: 72px; }
+  header .logo {
+    font-family: 'Conthrax Sb';
+    color: #ffd200;
+    font-size: 0.9375rem;
+    letter-spacing: 2px;
+    text-decoration: none; }
+  @media screen and (max-width: 991px) {
+    header .logo {
+      display: block;
+      overflow: hidden;
+      height: 46px;
+      width: 268px;
+      letter-spacing: 1px; } }
+    header .logo span {
+      display: inline-block;
+      color: #FFFFFF; }
+    header .logo img {
+      display: inline-block;
+      width: 54px;
+      margin-right: 30px; }
+  @media screen and (max-width: 991px) {
+    header .logo img {
+      margin-right: 10px; } }
+  header .navbar {
+    display: block;
+    padding-top: 0; }
+  @media screen and (max-width: 991px) {
+    header .navbar {
+      text-align: right;
+      position: absolute;
+      right: 0;
+      outline: none;
+      top: -21px;
+      z-index: 10; } }
+  @media screen and (max-width: 991px) {
+    header .navbar .navbar-collapse {
+      padding-top: 12px;
+      position: relative;
+      right: -15px; } }
+    header .navbar .nav-item {
+      min-width: 205px;
+      background-color: #111111;
+      border-left: solid 1px #2e2e2e;
+      height: 72px;
+      display: flex;
+      align-items: center; }
+  @media screen and (max-width: 1230px) {
+    header .navbar .nav-item {
+      min-width: 140px; } }
+  @media screen and (max-width: 991px) {
+    header .navbar .nav-item {
+      display: block;
+      border-left: none;
+      border-bottom: solid 1px #2e2e2e;
+      padding-right: 15px;
+      min-width: 205px; } }
+      header .navbar .nav-item:last-of-type {
+        border-left: none;
+        min-width: auto; }
+  @media screen and (max-width: 991px) {
+    header .navbar .nav-item:last-of-type {
+      min-width: 205px; } }
+    header .navbar .nav-link {
+      font-family: 'SF Pro Display_medium';
+      font-weight: 500;
+      font-size: 13px;
+      color: #f3f3f3;
+      text-transform: uppercase; }
+  @media screen and (max-width: 991px) {
+    header .navbar .nav-link {
+      padding-top: 15px; } }
+      header .navbar .nav-link span {
+        display: block;
+        font-family: 'SF Pro Display';
+        font-weight: bold;
+        color: #ffd200;
+        font-size: 1rem; }
+  @media screen and (max-width: 1265px) {
+    header .navbar .nav-link span {
+      font-size: 0.8rem; } }
+  @media screen and (max-width: 991px) {
+    header .navbar .nav-link span {
+      font-size: 12px; } }
+      header .navbar .nav-link.last {
+        color: #ffd200;
+        text-transform: none;
+        line-height: 33px;
+        display: flex;
+        position: relative;
+        z-index: 1; }
+        header .navbar .nav-link.last i {
+          color: #ffd200;
+          margin-left: 20px;
+          font-size: 33px; }
+  @media screen and (max-width: 991px) {
+    header .navbar .nav-link.last {
+      justify-content: flex-end; } }
+      header .navbar .nav-link.logout {
+        font-size: 13px;
+        color: #f3f3f3;
+        border-left: none;
+        text-transform: none; }
+    header .navbar .bg_avtar {
+      background-image: url("../images/bg_avtar.png");
+      background-size: cover;
+      width: 142px;
+      height: 59px;
+      position: relative;
+      bottom: -6.5px;
+      left: -10px;
+      text-align: center;
+      padding-top: 8px;
+      padding-right: 4px; }
+      header .navbar .bg_avtar .pink {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #d03a8c;
+        display: inline-block; }
+        header .navbar .bg_avtar .pink img {
+          display: block;
+          width: 100%; }
+  @media screen and (max-width: 991px) {
+    header .navbar .bg_avtar {
+      display: none; } }
+  header .navbar-dark .navbar-toggler {
+    outline: none;
+    color: white;
+    border-color: white;
+    right: 0; }
+
+.left_sidebar {
+  position: fixed;
+  left: 12px;
+  top: 91px;
+  background-color: #ffd200;
+  border-radius: 9px;
+  padding: 26px 0px;
+  text-align: left;
+  transition: 1s;
+  width: 57px;
+  overflow: hidden;
+  z-index: 10; }
+  @media screen and (max-width: 1250px) {
+    .left_sidebar {
+      padding: 15px 0px;
+      left: 0;
+      top: 98px;
+      width: 38px; } }
+  .left_sidebar .pointer {
+    padding-left: 18px;
+    padding-right: 15px;
+    padding-bottom: 17px; }
+  @media screen and (max-width: 1250px) {
+    .left_sidebar .pointer {
+      padding-left: 7px; } }
+    .left_sidebar .pointer i {
+      cursor: pointer;
+      font-size: 27px;
+      color: #636363; }
+  .left_sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .left_sidebar ul li {
+      padding-top: 16px;
+      padding-bottom: 17px;
+      padding-left: 15px;
+      padding-right: 0px; }
+  @media screen and (max-width: 1250px) {
+    .left_sidebar ul li {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 4px;
+      padding-right: 0px; } }
+      .left_sidebar ul li:hover {
+        background-color: #ffe466; }
+      .left_sidebar ul li a {
+        color: #636363;
+        font-family: 'SF Pro Display_medium';
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+        .left_sidebar ul li a img {
+          width: 31px; }
+        .left_sidebar ul li a span {
+          display: block;
+          margin-left: 13px;
+          min-width: 200px; }
+  .left_sidebar.active {
+    width: 200px;
+    transition: 1s;
+    text-align: left; }
+
+/*
+@keyframes anim {
+  0% {
+    width: 57px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@include max-screen(1250px) {
+  @keyframes anim {
+    0% {
+      width: 38px;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+}
+
+@keyframes anim_2 {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 57px;
+  }
+}
+
+@include max-screen(1250px) {
+  @keyframes anim_2 {
+    0% {
+      width: 200px;
+    }
+    100% {
+      width: 38px;
+    }
+  }
+}
+*/
+@media screen and (max-width: 767px) {
+  .dashboard {
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-left: 25px; } }
+.dashboard p {
+  color: #000;
+  font-size: 0.8125rem;
+  line-height: 1.6875rem;
+  font-family: 'SF Pro Display_reg';
+  font-weight: 400;
+  margin-bottom: 2rem; }
+.dashboard.workout_Plans_bg .container {
+  background-image: url("../images/workout_Plans_bg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.workout_Plans_bg .container {
+    min-height: auto;
+    background-image: none; } }
+.dashboard.supplements_Plans_bg .container {
+  background-image: url("../images/supplements_Plans.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.supplements_Plans_bg .container {
+    min-height: auto;
+    background-image: none; } }
+.dashboard.check_in_bg .container {
+  background-image: url("../images/check_in_bg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.check_in_bg .container {
+    min-height: auto;
+    background-image: none; } }
+.dashboard.weight_bg .container {
+  background-image: url("../images/weight.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.weight_bg .container {
+    min-height: auto;
+    background-image: none; } }
+@media screen and (max-width: 767px) {
+  .dashboard.weight_bg .container .btn {
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+.dashboard.Meal_bg .container {
+  background-image: url("../images/Meal.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.Meal_bg .container {
+    min-height: auto;
+    background-image: none; } }
+@media screen and (max-width: 767px) {
+  .dashboard.Meal_bg .container .btn {
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+.dashboard.photo_tracker_bg {
+  padding-bottom: 15px; }
+  .dashboard.photo_tracker_bg .container {
+    background-image: url("../images/photo_tracker_bg.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.photo_tracker_bg .container {
+    min-height: auto;
+    background-image: none; } }
+@media screen and (max-width: 767px) {
+  .dashboard.photo_tracker_bg .container .btn {
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 575px) {
+  .dashboard.photo_tracker_bg {
+    padding-left: 38px; }
+    .dashboard.photo_tracker_bg .table td .form-inline {
+      align-items: baseline; } }
+.dashboard.exercise_bg .container {
+  background-image: url("../images/exercise_bg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .container {
+    min-height: auto;
+    background-image: none; } }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .container .btn {
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .form-inline {
+    margin-bottom: 15px; } }
+.dashboard.exercise_bg .form-inline:before {
+  content: "\f002";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 49px;
+  top: 5px; }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .form-inline:before {
+    left: 32px;
+    top: 5px; } }
+.dashboard.exercise_bg .form-inline .btn {
+  min-width: 107px; }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .form-inline .btn {
+    width: 38%;
+    min-width: auto; } }
+.dashboard.exercise_bg .form-inline .form-control {
+  height: 33px;
+  line-height: 33px;
+  padding-left: 26px; }
+@media screen and (max-width: 767px) {
+  .dashboard.exercise_bg .form-inline .form-control {
+    width: 60%; } }
+.dashboard.exercise_bg .fo_img span {
+  right: 50%;
+  bottom: 50%;
+  margin-right: -13px;
+  margin-bottom: -13px; }
+.dashboard.work_video_bg .container {
+  background-image: url("../images/work_video_bg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .container {
+    min-height: auto;
+    background-image: none; } }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .container .btn {
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .form-inline {
+    margin-bottom: 15px;
+    justify-content: start !important; }
+    .dashboard.work_video_bg .form-inline .form-group.field-exercisessearchmodel-search, .dashboard.work_video_bg .form-inline .field-workoutssearchmodel-search {
+      display: contents; } }
+.dashboard.work_video_bg .form-inline:before {
+  content: "\f002";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 49px;
+  top: 5px; }
+@media screen and (max-width: 1199px) {
+  .dashboard.work_video_bg .form-inline:before {
+    left: -10px; } }
+@media screen and (max-width: 991px) {
+  .dashboard.work_video_bg .form-inline:before {
+    left: -90px; } }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .form-inline:before {
+    left: 25px;
+    top: 5px; } }
+.dashboard.work_video_bg .form-inline .btn {
+  min-width: 107px; }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .form-inline .btn {
+    width: 38%;
+    min-width: auto; } }
+.dashboard.work_video_bg .form-inline .form-control {
+  height: 33px;
+  line-height: 33px;
+  padding-left: 26px; }
+@media screen and (max-width: 767px) {
+  .dashboard.work_video_bg .form-inline .form-control {
+    width: 60%;
+    padding-right: 26px; } }
+.dashboard.work_video_bg .fo_img span {
+  right: 50%;
+  bottom: 50%;
+  margin-right: -13px;
+  margin-bottom: -13px; }
+.dashboard .by_photo {
+  width: 100%;
+  max-height: 159px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: silver; }
+  .dashboard .by_photo img {
+    display: block;
+    width: 100%; }
+@media screen and (max-width: 991px) {
+  .dashboard .by_photo {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px; } }
+@media screen and (max-width: 575px) {
+  .dashboard .by_photo {
+    margin: 0 auto; } }
+.dashboard .name {
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #000;
+  margin-bottom: 20px; }
+@media screen and (max-width: 375px) {
+  .dashboard .name {
+    font-size: 1.5rem; } }
+  .dashboard .name span {
+    font-size: 0.75rem;
+    line-height: 0.75rem; }
+.dashboard .upl {
+  display: inline-block;
+  border: none;
+  background-color: #ffd200;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 105px; }
+  .dashboard .upl input {
+    border: none;
+    background-color: #ffd200;
+    opacity: 0;
+    width: 105px;
+    border-radius: 6px;
+    cursor: pointer; }
+  .dashboard .upl:before {
+    content: "Upload Photo";
+    position: absolute;
+    left: 0;
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+    width: 105px;
+    text-align: center;
+    cursor: pointer; }
+.dashboard .title_contest {
+  color: #000;
+  font-family: 'SF Pro Display';
+  font-weight: bold;
+  font-size: 1.3125rem;
+  width: 100%;
+  margin-bottom: 32px;
+  line-height: 1.3125rem; }
+  .dashboard .title_contest span {
+    display: block;
+    font-size: 1rem;
+    padding-top: 10px; }
+.dashboard .bg_white {
+  padding-left: 33px;
+  padding-right: 33px;
+  border-radius: 12px 0 0 12px;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+@media screen and (max-width: 767px) {
+  .dashboard .bg_white {
+    border-radius: 12px; } }
+.dashboard .bg_rouse {
+  text-align: center;
+  background-color: #fffced;
+  border-radius: 0 12px 12px 0;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+@media screen and (max-width: 767px) {
+  .dashboard .bg_rouse {
+    border-radius: 12px;
+    margin-top: 10px; } }
+.dashboard .current {
+  font-family: 'SF Pro Display_medium';
+  font-weight: 500;
+  font-size: 13px;
+  color: #999999;
+  text-transform: uppercase;
+  min-width: 200px; }
+@media screen and (max-width: 767px) {
+  .dashboard .current {
+    padding-top: 15px; } }
+  .dashboard .current span {
+    display: block;
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem; }
+.dashboard .update {
+  color: #000;
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin-bottom: 27px; }
+  .dashboard .update span {
+    font-family: 'SF Pro Display_medium';
+    font-weight: 500;
+    font-size: 0.8125rem;
+    display: block; }
+.dashboard .btn {
+  border: none;
+  border-radius: 6px;
+  background-color: #ffd200;
+  display: inline-block;
+  font-family: 'SF Pro Display';
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  min-width: 164px; }
+.dashboard .pl_cust {
+  padding-left: 0px; }
+@media screen and (max-width: 767px) {
+  .dashboard .pl_cust {
+    padding-left: 15px; } }
+.dashboard .weight {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: 'SF Pro Display';
+  font-weight: bold; }
+  .dashboard .weight.font_22 {
+    font-size: 22px;
+    line-height: 25px; }
+@media screen and (max-width: 991px) {
+  .dashboard .weight.font_22 {
+    font-size: 16px;
+    line-height: 20px; } }
+.dashboard .video_col {
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  color: #000;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  min-width: 70px;
+  text-align: right; }
+.dashboard .thead-dark tr {
+  background-color: #181818;
+  color: #999999; }
+  .dashboard .thead-dark tr th:first-of-type {
+    border-radius: 8px 0 0 0px;
+    overflow: hidden; }
+  .dashboard .thead-dark tr th:last-of-type {
+    border-radius: 0 8px 0px 0;
+    overflow: hidden; }
+.dashboard tbody tr:last-of-type td:last-of-type {
+  border-radius: 0 0px 8px 0;
+  overflow: hidden; }
+.dashboard tbody tr:last-of-type th:first-of-type {
+  border-radius: 0px 0 0 8px;
+  overflow: hidden; }
+.dashboard .table .thead-dark th {
+  background-color: #181818;
+  border-color: transparent;
+  color: #999999;
+  font-family: 'SF Pro Display_reg';
+  font-weight: normal;
+  font-size: 16px; }
+.dashboard .table th, .dashboard .table td {
+  background-color: #FFFFFF;
+  font-weight: normal; }
+.dashboard .table .form-group .form-control {
+  display: inline-block;
+  margin-right: 7px;
+  background-color: #ebebeb;
+  line-height: 33px;
+  border: none;
+  height: 33px;
+  max-width: 75px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+.dashboard .table .btn {
+  min-width: 47px; }
+.dashboard #workout {
+  padding-left: 15px; }
+  .dashboard #workout .row {
+    margin-right: 0; }
+.dashboard .card-product_text {
+  height: 77px;
+  overflow: hidden; }
+
+.weight_2 {
+  color: #000;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: 'SF Pro Display';
+  font-weight: 300; }
+
+.brows {
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'SF Pro Display';
+  font-weight: 300; }
+
+.categorries {
+  border: none;
+  border-radius: 6px;
+  background-color: #e1e1e1;
+  display: inline-block;
+  font-family: 'SF Pro Display';
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  min-width: 91px;
+  line-height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 8px; }
+  .categorries:hover {
+    text-decoration: none;
+    color: #000; }
+  .categorries.active {
+    background-color: #ffd200; }
+
+.btn-all {
+  border: none;
+  border-radius: 6px;
+  background-color: #ffd200;
+  display: inline-block;
+  font-family: 'SF Pro Display';
+  font-weight: bold;
+  color: #000;
+  font-size: 11px;
+  text-align: center;
+  min-width: 106px;
+  line-height: 30px; }
+  .btn-all:hover {
+    text-decoration: none;
+    color: #000; }
+
+.radius {
+  overflow: hidden;
+  border-radius: 12px !important; }
+
+.bg_white {
+  background-color: white; }
+
+.progresPhoto {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 33px; }
+  .progresPhoto h4 {
+    font-family: 'SF Pro Display_medium';
+    font-weight: 500;
+    color: #000;
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+    margin-left: 23px; }
+  @media screen and (max-width: 346px) {
+    .progresPhoto h4 {
+      margin-left: 5px; } }
+
+.fo_img {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 12px; }
+  .fo_img span {
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    bottom: 11px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top: 4px;
+    padding-left: 4px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s; }
+    .fo_img span i {
+      color: #FFFFFF;
+      font-size: 14px; }
+  .fo_img .bottom_line {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    height: 0;
+    transition: 0.3s;
+    left: 0;
+    bottom: -1px;
+    border-radius: 0 0 9px 9px;
+    background-color: #ffd200;
+    padding-top: 0;
+    padding-left: 21px;
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'SF Pro Display_reg';
+    font-weight: 400; }
+  @media screen and (max-width: 767px) {
+    .fo_img .bottom_line {
+      height: 40px; } }
+  .fo_img:hover .bottom_line {
+    height: 40px;
+    transform: none; }
+  .fo_img:hover span {
+    transform: scale(1.6); }
+  .fo_img img {
+    width: 100%;
+    display: block; }
+
+.regular {
+  font-family: 'SF Pro Display_reg';
+  font-weight: 400;
+  color: #000;
+  font-size: 1.5rem; }
+
+.for_foto {
+  width: 66px;
+  height: 101px;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden; }
+  .for_foto img {
+    display: block;
+    width: 100%; }

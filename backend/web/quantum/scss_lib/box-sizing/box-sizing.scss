@@ -1,0 +1,62 @@
+@mixin box-sizing($s){
+-webkit-box-sizing: $s; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: $s;    /* Firefox, other Gecko */
+box-sizing: $s;         /* Opera/IE 8+ */
+}
+
+
+@mixin size($width,$height,$min-width:'',$min-height:'',$max-width:'',$max-height:''){
+
+  @if $width!='' {
+    @if unitless($width){
+      $width: #{$width}px;
+    }
+  }
+
+  @if $height!='' {
+    @if unitless($height){
+      $height: #{$height}px;
+    }
+  }
+
+  @if $min-width!='' {
+    @if unitless($min-width){
+      $min-width: #{$min-width}px;
+    }
+  }
+  @if $min-height!=''{
+    @if unitless($min-height){
+      $min-height: #{$min-height}px;
+    }
+  }
+  @if $max-width!=''{
+    @if unitless($max-width){
+      $max-width: #{$max-width}px;
+    }
+  }
+  @if $max-height!=''{
+    @if unitless($max-height){
+      $max-height: #{$max-height}px;
+    }
+  }
+
+  @if $width != '' {
+    width: $width;
+  }
+  @if $height != '' {
+    height: $height;
+  }
+
+  @if $min-width != '' {
+    min-width: $min-width;
+  }
+  @if $min-height != '' {
+    min-height: $min-height;
+  }
+  @if $max-width != '' {
+    max-width: $max-width;
+  }
+  @if $max-height != '' {
+    max-height: $max-height;
+  }
+}

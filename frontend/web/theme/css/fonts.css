@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../fonts/SofiaProRegular.woff2") format("woff2"), url("../fonts/SofiaProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Light.eot");
+  src: url("../fonts/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light.ttf") format("truetype"), url("../fonts/SFProDisplay-Light.svg#SFProDisplay-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+/*# sourceMappingURL=fonts.css.map */

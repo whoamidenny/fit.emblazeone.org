@@ -1,0 +1,13 @@
+@mixin transform($trans){
+  -webkit-transform: $trans;
+  -moz-transform: $trans;
+  -o-transform: $trans;
+  -ms-transform: $trans;
+  transform: $trans;
+}
+
+@mixin rotate($deg){
+    -webkit-transform: rotate($deg);  // Chrome, Opera 15+, Safari 3.1+
+    -ms-transform: rotate($deg);  // IE 9
+    transform: rotate($deg);  // Firefox 16+, IE 10+, Opera
+}

@@ -1,0 +1,44 @@
+@mixin placeholder($color, $font : ''){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $color;
+    @if $font != '' {
+      font: $font;
+    }
+
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $color;
+    opacity:  1;
+    @if $font != '' {
+      font: $font;
+    }
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $color;
+    opacity:  1;
+    @if $font != '' {
+      font: $font;
+    }
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $color;
+    @if $font != '' {
+      font: $font;
+    }
+  }
+}
+
+@mixin placeholderCustom(){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    @content;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @content;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition_all($time){
+  -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  -ms-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}

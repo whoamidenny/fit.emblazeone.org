@@ -1,0 +1,62 @@
+$boot-sizes: 320 480 640 768 1024 1366 1920;
+$boot-rows: 1 2 3 4 5 6 7 8 9 10 11 12;
+$boot-proc: 8.33333333% 16.66666667% 25% 33.33333333% 41.66666667% 50% 58.33333333% 66.66666667% 75% 83.33333333% 91.66666667% 100%;
+
+@each $size in $boot-sizes{
+  @each $row in $boot-rows{
+    .col-#{$size}-#{$row} {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@each $size in $boot-sizes{
+  @media (min-width: #{$size}px) {
+    @for $i from 1 through length($boot-rows) {
+
+      $row: #{nth($boot-rows, $i)};
+      $percentage: #{nth($boot-proc, $i)};
+
+      .col-#{$size}-#{$row} {
+        float: left;
+      }
+
+      .col-#{$size}-#{$row} {
+        width: #{$percentage};
+      }
+
+      .col-#{$size}-offset-#{$row} {
+        margin-left: #{$percentage};
+      }
+      .col-#{$size}-push-#{$row} {
+        left: #{$percentage};
+      }
+      .col-#{$size}-pull-#{$row} {
+        right: #{$percentage};
+      }
+
+    }
+    .col-#{$size}-push-0 {
+      left: auto;
+    }
+    .col-#{$size}-pull-0 {
+      right: auto;
+    }
+    .col-#{$size}-offset-0 {
+      margin-left: 0;
+    }
+  }
+}
+
+.sizer-item{
+  float:left;
+}
+.auto-margin{
+  width: 100%;
+  .sizer-item{
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin background-size($value){
+  background-size:$value;
+  -webkit-background-size:$value;
+  -moz-background-size:$value;
+  -o-background-size:$value;
+}
+
+@mixin backgroundRetina($image,$ext,$sizeX,$sizeY,$important: ''){
+
+  @if $sizeX!='' {
+    @if unitless($sizeX){
+      $sizeX: #{$sizeX}px;
+    }
+  }
+
+  @if $sizeY!='' {
+    @if unitless($sizeY){
+      $sizeY: #{$sizeY}px;
+    }
+  }
+
+
+  background-image: url(#{$image}#{$ext}) #{$important};
+  @include background-size(#{$sizeX} #{$sizeY}  #{$important});
+  @include hdpi(2){
+    background-image: url(#{$image}_x2#{$ext}) #{$important};
+    @include background-size(#{$sizeX} #{$sizeY} #{$important});
+  }
+//  @include hdpi(3){
+//    background-image: url(#{$image}@3x#{$ext});
+//    @include background-size(#{$sizeX} #{$sizeY});
+//  }
+}
