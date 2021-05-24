@@ -1,0 +1,32 @@
+{
+  "name": "wbp/limitless_fit",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pavel Chernetsky",
+      "email": "pavel.chernetsky@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2-app-advanced": "*",
+    "yiizh/yii2-fontawesome": "*",
+    "yiisoft/yii2-bootstrap4": "*",
+    "kartik-v/yii2-widget-datepicker": "*",
+    "yiisoft/yii2-authclient": "*",
+    "mihaildev/yii2-ckeditor": "*",
+    "mihaildev/yii2-elfinder": "*",
+    "yiisoft/yii2-jui": "*",
+    "wbraganca/yii2-tagsinput": "*",
+    "keygenqt/yii2-image-ajax": "*",
+    "keygenqt/yii2-image-handler": "1.0.0",
+    "bower-asset/dropzone": "~4.0"
+  }
+}
